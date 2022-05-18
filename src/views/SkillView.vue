@@ -35,7 +35,7 @@
           <div class="text">
             <meter min="0" max="100" value="60">55 / 100</meter>
             <p>
-              I learned Java in University and made <br />
+              I learned Java in University and made a<br />
               couple of simple games.<br />
               I found it pretty interesting but difficult.<br />
             </p>
@@ -51,7 +51,7 @@
             <p>
               I took C++ class in Uni, <br />
               but failed it.<br />
-              So I hate it of course.<br />
+              So I hate.<br />
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@
             <meter min="0" max="100" value="30">40 / 100</meter>
             <p>
               I am learning Vue.js and I like it so far.<br />
-              So simple to make website.<br />
+              So simple to make a website.<br />
             </p>
           </div>
         </div>
