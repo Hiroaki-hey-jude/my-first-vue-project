@@ -44,6 +44,10 @@ li {
   position: relative;
 }
 
+a:active {
+  background: #69821b;
+}
+
 a:hover {
   opacity: 0.4;
 }
@@ -57,5 +61,12 @@ a {
   color: rgb(26, 25, 25);
   text-decoration: none;
   line-height: 50px;
+}
+
+@media all and (max-width: 480px) {
+  ol {
+    width: 300px;
+    justify-content: center;
+  }
 }
 </style>
