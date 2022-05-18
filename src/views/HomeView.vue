@@ -1,37 +1,99 @@
 <template>
   <div class="home">
     <div class="vue-image">
-      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="top logo" src="../assets/beautiful.jpg" />
     </div>
-    <div>
-      <p class="about-me">about me</p>
-      <p>
-        Highly motivated web and mobile app developer, <br />currently learning
-        vue.js. I made this portofolio website <br />using vue.js to get better
-        understanding.<br />
-        I want the TabaTaba!
-      </p>
-    </div>
-    <div class="jimcy">
-      <img src="@/assets/jimcy.jpg" alt="" />
-    </div>
+
+    <section id="about" class="wrapper">
+      <h2 class="section-title">About Me</h2>
+      <div class="content">
+        <img src="@/assets/me.jpg" alt="my profile pic" />
+        <div class="text">
+          <h3 class="content-title">{{ myName }}</h3>
+          <p>
+            Highly motivated web and mobile developer,<br />
+            currently learning Vue.js and Nuxt.js.<br />
+            Vamos!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="follow" class="wrapper">
+      <h2 class="section-title">Follow Me</h2>
+      <div class="content">
+        <a href="https://www.instagram.com/_zou_san_hi/"
+          ><img src="@/assets/in.png" alt="insta pic"
+        /></a>
+        <a href="https://github.com/Hiroaki-hey-jude"
+          ><img src="@/assets/git.png" alt="gitHub pic"
+        /></a>
+        <a href="https://www.facebook.com/profile.php?id=100011625511264"
+          ><img src="@/assets/facebook.png" alt="facebook pic"
+        /></a>
+      </div>
+    </section>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      myName: "Hiroaki Ueda",
+    };
+  },
+};
+</script>
+
 <style scoped>
-.home {
+html {
+  font-size: 100%;
+}
+body {
+  color: #383e45;
+  font-size: 0.9rem;
+}
+img {
+  max-width: 100%;
+}
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+.content-title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+#about .content {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.vue-image {
-  margin: auto;
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
 }
-.about-me {
-  font-size: 50px;
+#about .text {
+  text-align: left;
 }
-.jimcy {
-  margin-top: 50px;
-  margin-bottom: 200px;
+
+#follow img {
+  width: 100px;
+  height: 100px;
+  border-radius: 40%;
+  margin-right: 30px;
 }
 </style>
 

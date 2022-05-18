@@ -16,8 +16,7 @@ export default {
   data() {
     return {
       items: [
-        { title: "top", path: "/" },
-        { title: "profile", path: "/profile" },
+        { title: "profile", path: "/" },
         { title: "skills", path: "/skills" },
         { title: "outputs", path: "/outputs" },
       ],
@@ -41,7 +40,8 @@ li {
   height: 50px;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: bold;
   position: relative;
 }
 
@@ -55,7 +55,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  color: black;
+  color: rgb(165, 20, 20);
   text-decoration: none;
   line-height: 50px;
 }

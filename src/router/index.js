@@ -1,14 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ProfileView from '@/views/ProfileView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'profile',
     component: HomeView
   },
   {
@@ -20,9 +19,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/profile',
-    name: 'profile',
-    component: ProfileView
+    path: '/skills',
+    name: 'skills',
+    component: () => import(/* webpackChunkName: "about" */ '../views/SkillView.vue')
   }
 ]
 
