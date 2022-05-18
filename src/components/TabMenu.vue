@@ -18,7 +18,6 @@ export default {
       items: [
         { title: "profile", path: "/" },
         { title: "skills", path: "/skills" },
-        { title: "outputs", path: "/outputs" },
       ],
     };
   },
@@ -55,7 +54,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  color: rgb(165, 20, 20);
+  color: rgb(26, 25, 25);
   text-decoration: none;
   line-height: 50px;
 }

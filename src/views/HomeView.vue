@@ -13,7 +13,8 @@
           <p>
             Highly motivated web and mobile developer,<br />
             currently learning Vue.js and Nuxt.js.<br />
-            Vamos!
+            Sponsor me! <br />
+            Vamos!!
           </p>
         </div>
       </div>
